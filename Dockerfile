@@ -1,4 +1,4 @@
-from jlkovarik/dockerdev_base:latest
+from jlkovarik/dev_base:latest
 USER root
 USER dev
 ENV HOME /home/dev
