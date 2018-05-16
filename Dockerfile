@@ -1,7 +1,7 @@
 from jlkovarik/dev_base:latest
 USER root
 RUN curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -; apt-get update
-RUN apt-get install -y libtool zlib1g-dev libyaml-dev nodejs
+RUN apt-get install -y libtool zlib1g-dev libyaml-dev nodejs sqlite3 libsqlite3-dev  libbz2-dev libreadline6 libreadline6-dev
 RUN npm install webpack -g
 RUN usermod -aG sudo dev
 #sudo reqired for RVM to install required
